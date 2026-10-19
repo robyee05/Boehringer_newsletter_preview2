@@ -59,6 +59,8 @@ a{color:#00807d;}
   .tl-node{display:block !important;width:100% !important;box-sizing:border-box;}
   .tl-mid{display:block !important;width:100% !important;padding:10px 0 !important;}
     .rot{transform:rotate(90deg);}
+  .todo-card{display:block !important;width:100% !important;box-sizing:border-box;margin-bottom:10px !important;}
+  .todo-gap{display:none !important;}
   .legend{display:block !important;width:100% !important;padding:0 0 8px !important;}
 }
 </style>
@@ -82,7 +84,7 @@ a{color:#00807d;}
 <tr>
 <td class="stack" valign="top">
   <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
-    <td bgcolor="#00e47c" style="background-color:#00e47c;padding:5px 12px;border-radius:12px;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;font-weight:bold;color:#08312a;letter-spacing:.06em;white-space:nowrap;">3/2. RÉSZ</td>
+    <td bgcolor="#00e47c" style="background-color:#00e47c;padding:5px 12px;border-radius:12px;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;font-weight:bold;color:#08312a;letter-spacing:.06em;white-space:nowrap;">4/2. RÉSZ</td>
     <td width="10" style="width:10px;font-size:1px;">&nbsp;</td>
     <td bgcolor="#174a40" style="background-color:#174a40;padding:5px 12px;border-radius:12px;white-space:nowrap;">
       <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
@@ -105,10 +107,13 @@ a{color:#00807d;}
     <td width="84" bgcolor="#00e47c" style="width:84px;height:6px;line-height:6px;font-size:1px;background-color:#00e47c;border-radius:3px;">&nbsp;</td>
     <td width="4" style="width:4px;font-size:1px;">&nbsp;</td>
     <td width="84" bgcolor="#2c5a50" style="width:84px;height:6px;line-height:6px;font-size:1px;background-color:#2c5a50;border-radius:3px;">&nbsp;</td>
+    <td width="4" style="width:4px;font-size:1px;">&nbsp;</td>
+    <td width="84" bgcolor="#2c5a50" style="width:84px;height:6px;line-height:6px;font-size:1px;background-color:#2c5a50;border-radius:3px;">&nbsp;</td>
   </tr><tr>
     <td style="padding-top:6px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;color:#7fa197;">1. rész &#10003;</td><td></td>
     <td style="padding-top:6px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;font-weight:bold;color:#00e47c;">2. rész</td><td></td>
-    <td style="padding-top:6px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;color:#7fa197;">3. rész</td>
+    <td style="padding-top:6px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;color:#7fa197;">3. rész</td><td></td>
+    <td style="padding-top:6px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;color:#7fa197;">4. rész</td>
   </tr></table>
 </td>
 <td class="hide-mobile" width="170" valign="middle" align="right" style="width:170px;padding:30px 0 0 16px;"><img src="images/ikon-hero-2-resz.png" width="150" height="150" alt="eGFR-változás – illusztráció" style="display:block;width:150px;height:150px;border:0;border-radius:50%;outline:none;text-decoration:none;"></td>
@@ -311,47 +316,35 @@ a{color:#00807d;}
   <div style="font-family:'BoehringerForwardHead',Arial,Helvetica,sans-serif;font-size:15px;line-height:20px;font-weight:bold;color:#08312a;">eGFR-csökkenés a kiindulási értékhez képest</div>
   <div style="font-family:'BoehringerForwardHead',Arial,Helvetica,sans-serif;font-size:12.5px;line-height:17px;color:#4b5f59;">az első három hónapban</div>
   <div style="height:16px;line-height:16px;font-size:1px;">&nbsp;</div>
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-    <td width="30%" style="width:30%;font-size:1px;line-height:1px;">&nbsp;</td>
-    <td width="70%" align="left" style="width:70%;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:15px;font-weight:bold;color:#08312a;padding-bottom:4px;">&#9660; betegünk: &#8776;13%</td>
+  <!-- skála: 0–40% tengely; 15% = 37,5%, 30% = 75%; betegünk 13% = 32,5% -->
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;"><tr>
+    <td width="31.5%" style="width:31.5%;font-size:1px;line-height:1px;">&nbsp;</td>
+    <td width="68.5%" align="left" style="width:68.5%;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:15px;font-weight:bold;color:#08312a;padding-bottom:4px;white-space:nowrap;">&#9660; betegünk: &#8776;13%</td>
   </tr></table>
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-    <td width="32%" bgcolor="#00e47c" style="width:32%;height:16px;line-height:16px;font-size:1px;background-color:#00e47c;border-radius:8px 0 0 8px;">&nbsp;</td>
-    <td width="3" bgcolor="#08312a" style="width:3px;height:16px;line-height:16px;font-size:1px;background-color:#08312a;">&nbsp;</td>
-    <td width="5%" bgcolor="#00e47c" style="width:5%;height:16px;line-height:16px;font-size:1px;background-color:#00e47c;">&nbsp;</td>
-    <td width="2" bgcolor="#ffffff" style="width:2px;font-size:1px;line-height:16px;">&nbsp;</td>
-    <td width="37%" bgcolor="#ffc500" style="width:37%;height:16px;line-height:16px;font-size:1px;background-color:#ffc500;">&nbsp;</td>
-    <td width="2" bgcolor="#ffffff" style="width:2px;font-size:1px;line-height:16px;">&nbsp;</td>
-    <td width="25%" bgcolor="#f08a72" style="width:25%;height:16px;line-height:16px;font-size:1px;background-color:#f08a72;border-radius:0 8px 8px 0;">&nbsp;</td>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;"><tr>
+    <td width="32.5%" bgcolor="#00e47c" style="width:32.5%;height:16px;line-height:16px;font-size:1px;background-color:#00e47c;border-radius:8px 0 0 8px;">&nbsp;</td>
+    <td width="5%" bgcolor="#00e47c" style="width:5%;height:16px;line-height:16px;font-size:1px;background-color:#00e47c;border-left:3px solid #08312a;">&nbsp;</td>
+    <td width="37.5%" bgcolor="#ffc500" style="width:37.5%;height:16px;line-height:16px;font-size:1px;background-color:#ffc500;border-left:3px solid #ffffff;">&nbsp;</td>
+    <td width="25%" bgcolor="#f08a72" style="width:25%;height:16px;line-height:16px;font-size:1px;background-color:#f08a72;border-left:3px solid #ffffff;border-radius:0 8px 8px 0;">&nbsp;</td>
   </tr></table>
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-    <td width="37%" style="width:37%;padding-top:5px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;color:#4b5f59;">0%</td>
-    <td width="38%" style="width:38%;padding-top:5px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;font-weight:bold;color:#08312a;">15%</td>
-    <td width="25%" style="width:25%;padding-top:5px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;font-weight:bold;color:#08312a;">30%</td>
-  </tr></table>
-  <div style="height:16px;line-height:16px;font-size:1px;">&nbsp;</div>
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-    <td class="legend" width="33%" valign="top" style="padding:0 6px 0 0;">
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-    <td style="border-left:5px solid #00e47c;padding:2px 0 2px 10px;">
-      <div style="font-family:'BoehringerForwardHead',Arial,Helvetica,sans-serif;font-size:14px;line-height:18px;font-weight:bold;color:#08312a;">Jellemzően 10–15%</div>
-      <div style="font-family:'BoehringerForwardHead',Arial,Helvetica,sans-serif;font-size:12.5px;line-height:17px;color:#4b5f59;">átmeneti, várható csökkenés</div>
-    </td></tr></table>
-</td>
-    <td class="legend" width="33%" valign="top" style="padding:0 6px 0 0;">
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-    <td style="border-left:5px solid #ffc500;padding:2px 0 2px 10px;">
-      <div style="font-family:'BoehringerForwardHead',Arial,Helvetica,sans-serif;font-size:14px;line-height:18px;font-weight:bold;color:#08312a;">Akár 30%-ig</div>
-      <div style="font-family:'BoehringerForwardHead',Arial,Helvetica,sans-serif;font-size:12.5px;line-height:17px;color:#4b5f59;">az első 3 hónapban elfogadható lehet</div>
-    </td></tr></table>
-</td>
-    <td class="legend" width="33%" valign="top" style="padding:0 6px 0 0;">
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-    <td style="border-left:5px solid #f08a72;padding:2px 0 2px 10px;">
-      <div style="font-family:'BoehringerForwardHead',Arial,Helvetica,sans-serif;font-size:14px;line-height:18px;font-weight:bold;color:#08312a;">&gt;30% vagy tartós</div>
-      <div style="font-family:'BoehringerForwardHead',Arial,Helvetica,sans-serif;font-size:12.5px;line-height:17px;color:#4b5f59;">kiváltó tényezők keresése</div>
-    </td></tr></table>
-</td>
+  <!-- határértékek és magyarázatok: pontosan a szakaszhatárok alatt -->
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;"><tr>
+    <td width="37.5%" style="width:37.5%;padding:5px 0 0 0;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;color:#4b5f59;">0%</td>
+    <td width="37.5%" style="width:37.5%;padding:5px 0 0 0;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;font-weight:bold;color:#08312a;">15%</td>
+    <td width="25%" style="width:25%;padding:5px 0 0 0;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;font-weight:bold;color:#08312a;">30%</td>
+  </tr><tr><td colspan="3" style="height:10px;line-height:10px;font-size:1px;">&nbsp;</td></tr><tr>
+    <td width="37.5%" valign="top" style="width:37.5%;padding:0 6px 0 0;border-left:3px solid #00e47c;">
+      <div style="padding-left:8px;font-family:'BoehringerForwardHead',Arial,Helvetica,sans-serif;font-size:14px;line-height:18px;font-weight:bold;color:#08312a;">Jellemzően 10–15%</div>
+      <div style="padding-left:8px;font-family:'BoehringerForwardHead',Arial,Helvetica,sans-serif;font-size:12.5px;line-height:17px;color:#4b5f59;">átmeneti, várható csökkenés</div>
+    </td>
+    <td width="37.5%" valign="top" style="width:37.5%;padding:0 6px 0 0;border-left:3px solid #ffc500;">
+      <div style="padding-left:8px;font-family:'BoehringerForwardHead',Arial,Helvetica,sans-serif;font-size:14px;line-height:18px;font-weight:bold;color:#08312a;">Akár 30%-ig</div>
+      <div style="padding-left:8px;font-family:'BoehringerForwardHead',Arial,Helvetica,sans-serif;font-size:12.5px;line-height:17px;color:#4b5f59;">az első 3 hónapban elfogadható lehet</div>
+    </td>
+    <td width="25%" valign="top" style="width:25%;padding:0 6px 0 0;border-left:3px solid #f08a72;">
+      <div style="padding-left:8px;font-family:'BoehringerForwardHead',Arial,Helvetica,sans-serif;font-size:14px;line-height:18px;font-weight:bold;color:#08312a;">&gt;30% vagy tartós</div>
+      <div style="padding-left:8px;font-family:'BoehringerForwardHead',Arial,Helvetica,sans-serif;font-size:12.5px;line-height:17px;color:#4b5f59;">kiváltó tényezők keresése</div>
+    </td>
   </tr></table>
 </td></tr>
 <tr><td style="height:24px;line-height:24px;font-size:1px;mso-line-height-rule:exactly;">&nbsp;</td></tr>
@@ -447,27 +440,23 @@ a{color:#00807d;}
     </td>
   </tr></table>
   <div style="height:18px;line-height:18px;font-size:1px;">&nbsp;</div>
+  <!-- egyforma magasságú dobozok: a két kártya ugyanannak a sornak a cellája -->
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-    <td class="half" width="50%" valign="top" style="padding:0 6px 0 0;">
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-    <td bgcolor="#ffffff" style="background-color:#ffffff;border:1px solid #a3e5ee;border-radius:14px;padding:14px 14px;">
+    <td class="todo-card" width="49%" valign="middle" bgcolor="#ffffff" style="width:49%;background-color:#ffffff;border:1px solid #a3e5ee;border-radius:14px;padding:14px 14px;">
       <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
-        <td width="56" valign="top" style="width:56px;padding-right:12px;"><img src="images/ikon-dokumentalas.png" width="52" height="52" alt="" style="display:block;width:52px;height:52px;border:0;border-radius:50%;outline:none;text-decoration:none;"></td>
+        <td width="56" valign="middle" style="width:56px;padding-right:12px;"><img src="images/ikon-dokumentalas.png" width="52" height="52" alt="" style="display:block;width:52px;height:52px;border:0;outline:none;text-decoration:none;"></td>
         <td valign="middle"><div style="font-family:'BoehringerForwardHead',Arial,Helvetica,sans-serif;font-size:15px;line-height:20px;font-weight:bold;color:#08312a;">Kiindulási vesefunkció</div>
         <div style="font-family:'BoehringerForwardHead',Arial,Helvetica,sans-serif;font-size:12.5px;line-height:17px;color:#4b5f59;">dokumentálása az indításkor</div></td>
       </tr></table>
-    </td></tr></table>
-</td>
-    <td class="half" width="50%" valign="top" style="padding:0 6px 0 0;">
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-    <td bgcolor="#ffffff" style="background-color:#ffffff;border:1px solid #a3e5ee;border-radius:14px;padding:14px 14px;">
+    </td>
+    <td class="todo-gap" width="2%" style="width:2%;font-size:1px;line-height:1px;">&nbsp;</td>
+    <td class="todo-card" width="49%" valign="middle" bgcolor="#ffffff" style="width:49%;background-color:#ffffff;border:1px solid #a3e5ee;border-radius:14px;padding:14px 14px;">
       <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
-        <td width="56" valign="top" style="width:56px;padding-right:12px;"><img src="images/ikon-tajekoztatas.png" width="52" height="52" alt="" style="display:block;width:52px;height:52px;border:0;border-radius:50%;outline:none;text-decoration:none;"></td>
+        <td width="56" valign="middle" style="width:56px;padding-right:12px;"><img src="images/ikon-tajekoztatas.png" width="52" height="52" alt="" style="display:block;width:52px;height:52px;border:0;outline:none;text-decoration:none;"></td>
         <td valign="middle"><div style="font-family:'BoehringerForwardHead',Arial,Helvetica,sans-serif;font-size:15px;line-height:20px;font-weight:bold;color:#08312a;">Előzetes betegtájékoztatás</div>
         <div style="font-family:'BoehringerForwardHead',Arial,Helvetica,sans-serif;font-size:12.5px;line-height:17px;color:#4b5f59;">mérsékelt, átmeneti eGFR-csökkenés előfordulhat</div></td>
       </tr></table>
-    </td></tr></table>
-</td>
+    </td>
   </tr></table>
 </td></tr>
 <tr><td style="height:30px;line-height:30px;font-size:1px;mso-line-height-rule:exactly;">&nbsp;</td></tr>
@@ -477,7 +466,7 @@ a{color:#00807d;}
     <td valign="middle" style="font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;font-weight:bold;letter-spacing:.08em;color:#00e47c;">KÖVETKEZŐ RÉSZÜNK TARTALMÁBÓL</td>
     <td align="right" valign="middle">
       <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="right"><tr>
-        <td bgcolor="#00e47c" style="background-color:#00e47c;padding:4px 10px;border-radius:10px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;font-weight:bold;color:#08312a;white-space:nowrap;">3/3. RÉSZ</td>
+        <td bgcolor="#00e47c" style="background-color:#00e47c;padding:4px 10px;border-radius:10px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;font-weight:bold;color:#08312a;white-space:nowrap;">4/3. RÉSZ</td>
       </tr></table>
     </td>
   </tr></table>
